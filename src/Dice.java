@@ -2,13 +2,16 @@ import java.util.Random;
 
 public class Dice {
 
-    public int play(){
-        Random rand = new Random();
-        int x = rand.nextInt(1,7);
-        return x;
-    }
+    Dice(){
+    } 
+    
+    int play(){
+            Random rand = new Random();
+            int x = rand.nextInt(1,7);
+            return x;
+        }
 
-    public int getValue(){
+    int getValue(){
         int value = play();
         return value;
     }
